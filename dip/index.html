@@ -7,232 +7,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
       maximum-scale=1.0, user-scalable=no">
-    <style>
-        @font-face {
-            font-family: Roboto;
-            /* Имя шрифта */
-            src: url(roboto.ttf);
-        }
-
-        body {
-            background-color: #fbfbfb;
-            overflow-x: hidden;
-        }
-
-        .container {
-            width: 1920px;
-            margin: auto;
-            padding-left: 375px;
-            box-sizing: border-box;
-        }
-
-        .flex-nav {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .left-nav {
-            width: 270px;
-            padding-left: 0;
-        }
-
-        .right-nav {
-            width: 456px;
-            padding-right: 150px;
-        }
-
-        .phnumbner {
-            font-size: 25px;
-            color: #000;
-            line-height: 44px;
-        }
-
-        .call-request {
-            font-size: 16px;
-            color: #fc557c;
-            display: block;
-            border: 1px solid #fc557c;
-            width: 208px;
-            height: 44px;
-            box-sizing: border-box;
-            line-height: 44px;
-            text-align: center;
-        }
-
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-
-        a:hover {
-            color: #fc557c;
-            text-decoration: underline;
-
-        }
-
-        .banner {
-            width: 100%;
-            height: 468px;
-            background-image: url(ellipse.png);
-            background-position: right;
-            ;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin-right: 0;
-            margin-left: auto;
-        }
-
-        .in-banner-content {
-            position: absolute;
-            top: 200px;
-        }
-
-        h1 {
-            font-size: 80px;
-            margin-bottom: 24px;
-            margin-top: 0;
-            ;
-        }
-
-        .job-title {
-            color: #8993ad;
-            font-size: 25px;
-            font-family: Roboto;
-        }
-
-        button {
-            margin-top: 50px;
-            display: block;
-            width: 270px;
-            height: 58px;
-            color: #fff;
-            background-color: #ff4e2e;
-            border: 0;
-            font-size: 18px;
-        }
-
-        .arrow {
-            width: 60px;
-            height: 60px;
-            background-repeat: no-repeat;
-            background-image: url(arrow.png);
-            background-size: cover;
-            box-shadow: 0 0 10px 1px;
-            border-radius: 50%;
-            margin: 10px;
-        }
-
-        .arrow:hover,
-        .call-request:hover,
-        button:hover {
-            cursor: pointer;
-        }
-
-        .arrow-right {
-            transform: rotate(180deg)
-        }
-
-        .bottom-gradient {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 100px;
-            height: 364px;
-            width: 100%;
-            text-align: left;
-            font-family: Roboto;
-            color: #fff;
-            box-sizing: border-box;
-            background-image: linear-gradient(to top right, #ff8f5a, #ff2f96);
-            padding: 0 475px;
-        }
-
-        .main-text {
-            font-size: 44px;
-        }
-
-        .mini-text {
-            font-size: 20px;
-        }
-
-        @media (min-width: 960px) {}
-
-        @media (max-width: 980px) {}
-
-        @media (max-width: 798px) {}
-
-        @media (max-width: 720px) {}
-
-        @media (max-width: 575.98px) {
-            body {
-                overflow-x: scroll;
-            }
-
-            .container {
-                width: 100%;
-                padding-left: 0;
-            }
-
-            .main-wrapper {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .in-banner-content {
-                position: static;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello.css">
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <div class="flex-nav">
-                <ul class="left-nav">
-                    <li><a href="#"> Услуги</a></li>
-                    <li><a href="#"> Портфолио</a></li>
-                    <li><a href="#"> Стоимость</a></li>
-                </ul>
-                <ul class="right-nav">
-                    <li class="phnumbner">+7 (499) 995-55-77</li>
-                    <li class="call-request">
-                        Заказать звонок
-                    </li>
-                </ul>
-            </div>
+    <main>
+        <div class="container">
+            <nav>
+                <div class="flex-nav">
+                    <ul class="left-nav">
+                        <li><a href="#"> Услуги</a></li>
+                        <li><a href="#"> Портфолио</a></li>
+                        <li><a href="#"> Стоимость</a></li>
+                    </ul>
+                    <ul class="right-nav">
+                        <li class="phnumbner">+7 (499) 995-55-77</li>
+                        <li class="call-request">
+                            Заказать звонок
+                        </li>
+                    </ul>
+                </div>
 
-        </nav>
-        <div class="main-wrapper">
-            <div class="banner">
+            </nav>
+            <div class="main-wrapper">
+                <div class="banner">
+                </div>
+                <div class="in-banner-content">
+                    <h1>Дмитрий Алексеев</h1>
+                    <span class="job-title">Frontend разработчик и веб-верстальщик</span>
+                    <button class="detail-button">Узнать больше</button>
+                    <button class="detail-button">Узнать стоимость</button>
+                    <button class="detail-button">Заказать проект</button>
+                </div>
             </div>
-            <div class="in-banner-content">
-                <h1>Дмитрий Алексеев</h1>
-                <span class="job-title">Frontend разработчик и веб-верстальщик</span>
-                <button>Узнать больше</button>
-            </div>
+            <button class="arrow arrow-left"></button>
+            <button class="arrow arrow-right"></button>
         </div>
-        <div class="arrow arrow-left"></div>
-        <div class="arrow arrow-right"></div>
-    </div>
+   
     <div class="bottom-gradient">
-        <div class="bottom-gradient-block-text">
-            <p>
-                <span class="main-text">Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4
-                    часа.*</span>
-            </p>
-            <p class="mini-text">
-                * Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,
-                в зависимости от сложности задач.
-            </p>
-        </div>
+        <p>
+            <span class="main-text">Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4
+                часа.*</span>
+        </p>
+        <p class="mini-text">
+            * Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,
+            в зависимости от сложности задач.
+        </p>
+
     </div>
+    <svg width="115" height="190" class="svg-pic">
+        <defs>
+            <linearGradient id="Gradient-1">
+                <stop offset="0%" stop-color="#fa7a64" />
+                <stop offset="100%" stop-color="#ff2f96" />
+            </linearGradient>
+        </defs>   
+        <polygon points="0,100 10,200 50,30" fill= "url(#Gradient-1)"/>
+        </svg>
+    </svg>
+    <div class="contacts">
+        <span class="icon-mail"></span>
+        <span class="icon-phone"></span>
+    </div>
+    <ul class="social-media">
+        <li class="social-media-icon vk">  </li>
+        <li class="social-media-icon fb">  </li>
+        <li class="social-media-icon tw">  </li>
+        <li class="social-media-icon in">  </li>
+    </ul>
+</main>
 </body>
 
 </html>
