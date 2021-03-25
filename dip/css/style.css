@@ -46,6 +46,7 @@ ul {
     box-sizing: border-box;
     line-height: 44px;
     text-align: center;
+    background-color: #fff;
 }
 
 a {
@@ -56,7 +57,6 @@ a {
 a:hover {
     color: #fc557c;
     text-decoration: underline;
-
 }
 
 .banner {
@@ -96,7 +96,6 @@ h1 {
     background-color: #ff4e2e;
     border: 0;
     font-size: 18px;
-    
 }
 
 .arrow {
@@ -108,12 +107,10 @@ h1 {
     box-shadow: 0 0 10px 1px;
     border-radius: 50%;
     margin: 10px;
-    border:0;
+    border: 0;
 }
 
-.arrow:hover,
-.call-request:hover,
-button:hover {
+.arrow:hover, .call-request:hover, button:hover {
     cursor: pointer;
 }
 
@@ -121,7 +118,7 @@ button:hover {
     transform: rotate(180deg)
 }
 
-.bottom-gradient {
+.medium-gradient {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,16 +142,42 @@ button:hover {
     font-size: 20px;
 }
 
-.contacts{
-    background-image: linear-gradient(to bottom right, #fa098f, #f6355b);
-   
+.center-bottom{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
 }
 
-.contacts > .icon-mail, .icon-phone {
-    font-size: 3rem; /* Размер текста */
-    margin: 0; /* Убираем отступы */
-    background: white; /* Белый цвет фона */
-    mix-blend-mode: screen; /* Режим наложения */
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.contact-icon {
+    background-image: linear-gradient(to bottom right, #fa098f, #f6355b);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-icon>.fa {
+    font-size: 3rem;
+    /* Размер текста */
+    margin: 0;
+    /* Убираем отступы */
+    background: white;
+    /* Белый цвет фона */
+    mix-blend-mode: screen;
+    /* Режим наложения */
+    padding-right: 20px;
+}
+
+.contacts-link {
+    font-size: 25px;
+    color: #000;
+    font-family: Roboto;
 }
 
 .social-media {
@@ -174,15 +197,46 @@ button:hover {
 .fb {
     background-position: 34%;
 }
+
 .tw {
     background-position: 67%;
 }
+
 .in {
     background-position: 100%;
 }
 
 .svg-pic {
-   /*  transform: rotate(2deg) */
+    /*  transform: rotate(2deg) */
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 262px;
+    align-items: center;
+}
+
+.left-bottom {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+
+.bottom-nav-li-link {
+    color: #8993ad;
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+.right-bottom{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media (min-width: 1171px) {
@@ -207,17 +261,14 @@ button:hover {
     body {
         overflow-x: scroll;
     }
-
     .container {
         width: 100%;
         padding-left: 0;
     }
-
     .main-wrapper {
         display: flex;
         flex-direction: column;
     }
-
     .in-banner-content {
         position: static;
     }

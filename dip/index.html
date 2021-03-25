@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
       maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
     <main>
-        <div class="container">
+        <section class="container">
             <nav>
                 <div class="flex-nav">
                     <ul class="left-nav">
@@ -23,12 +23,11 @@
                     </ul>
                     <ul class="right-nav">
                         <li class="phnumbner">+7 (499) 995-55-77</li>
-                        <li class="call-request">
-                            Заказать звонок
+                        <li>
+                            <button class="call-request"> Заказать звонок</button>
                         </li>
                     </ul>
                 </div>
-
             </nav>
             <div class="main-wrapper">
                 <div class="banner">
@@ -43,40 +42,58 @@
             </div>
             <button class="arrow arrow-left"></button>
             <button class="arrow arrow-right"></button>
-        </div>
-   
-    <div class="bottom-gradient">
-        <p>
-            <span class="main-text">Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4
-                часа.*</span>
-        </p>
-        <p class="mini-text">
-            * Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,
-            в зависимости от сложности задач.
-        </p>
+        </section>
+        <section class="medium-gradient">
+            <p>
+                <span class="main-text">Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4
+                    часа.*</span>
+            </p>
+            <p class="mini-text">
+                * Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,
+                в зависимости от сложности задач.
+            </p>
 
-    </div>
-    <svg width="115" height="190" class="svg-pic">
-        <defs>
-            <linearGradient id="Gradient-1">
-                <stop offset="0%" stop-color="#fa7a64" />
-                <stop offset="100%" stop-color="#ff2f96" />
-            </linearGradient>
-        </defs>   
-        <polygon points="0,100 10,200 50,30" fill= "url(#Gradient-1)"/>
-        </svg>
-    </svg>
-    <div class="contacts">
-        <span class="icon-mail"></span>
-        <span class="icon-phone"></span>
-    </div>
-    <ul class="social-media">
-        <li class="social-media-icon vk">  </li>
-        <li class="social-media-icon fb">  </li>
-        <li class="social-media-icon tw">  </li>
-        <li class="social-media-icon in">  </li>
-    </ul>
-</main>
+        </section>
+        <!--         <svg width="115" height="190" class="svg-pic">
+            <defs>
+                <linearGradient id="Gradient-1">
+                    <stop offset="0%" stop-color="#fa7a64" />
+                    <stop offset="100%" stop-color="#ff2f96" />
+                </linearGradient>
+            </defs>
+            <polygon points="0,100 10,200 50,30" fill="url(#Gradient-1)" />
+        </svg> -->
+        <section class="bottom">
+            <ul class="left-nav left-bottom">
+                <li><a class="bottom-nav-li-link" href="#"> Услуги</a></li>
+                <li><a class="bottom-nav-li-link" href="#"> Портфолио</a></li>
+                <li><a class="bottom-nav-li-link" href="#"> Стоимость</a></li>
+            </ul>
+            <article class="center-bottom">
+                <div class="contact">
+                    <span class="contact-icon">
+                        <i class="fa fa-phone" style="font-size:36px"></i>
+                    </span>
+                    <a class="contacts-link" href="tel:+7(499)995-77-55">+7(499)995-77-55</a>
+                </div>
+                <div class="contact">
+                    <span class="contact-icon">
+                        <i class="fa fa-envelope" style="font-size:36px"></i>
+                    </span>
+                    <a class="contacts-link" href="mailto:dmitriy@alexeev.com">dmitriy@alexeev.com</a>
+                </div>
+            </article>
+            <article class="right-bottom">
+                <button class="call-request"> Заказать звонок</button>
+                <ul class="social-media">
+                    <li class="social-media-icon vk"> </li>
+                    <li class="social-media-icon fb"> </li>
+                    <li class="social-media-icon tw"> </li>
+                    <li class="social-media-icon in"> </li>
+                </ul>
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>
