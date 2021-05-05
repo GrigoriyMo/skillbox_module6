@@ -1,7 +1,31 @@
 @font-face {
     font-family: Roboto;
     /* Имя шрифта */
-    src: url(../font/roboto.ttf);
+
+    src: url('../font/roboto/Roboto-Bold-webfont.eot'); /* IE 9 Compatibility Mode */
+    src: url('../font/roboto/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+      url('../font/roboto/Roboto-Bold-webfont.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+      url('../font/roboto/Roboto-Bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('../font/Roboto-Bold-webfont.svg#Robotobold') format('svg'); /* Chrome < 4, Legacy iOS */
+  
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url('../font/roboto/Roboto-Regular-webfont.eot'); /* IE 9 Compatibility Mode */
+    src: url('../font/roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+      url('../font/roboto/Roboto-Regular-webfont.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+      url('../font/roboto/Roboto-Regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('../font/Roboto-Regular-webfont.svg#Robotobold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: roboto-Black;
+    src: url('../font/roboto/Roboto-Black-webfont.eot'); /* IE 9 Compatibility Mode */
+    src: url('../font/roboto/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+      url('../font/roboto/Roboto-Black-webfont.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+      url('../font/roboto/Roboto-Black-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('../font/Roboto-Black-webfont.svg#Robotobold') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
 body {
@@ -34,9 +58,15 @@ ul {
 }
 
 .left-nav {
-    width: 270px;
-    padding-left: 14px;
+    width: 280px;
     margin-top: 44px;
+    padding-left:0;
+    line-height: 1em;
+}
+
+.li-link{
+    font-family: roboto-regular;
+    font-size: 16px;
 }
 
 .right-nav {
@@ -51,7 +81,7 @@ ul {
     font-size: 25px;
     color: #000;
     line-height: 44px;
-    padding-right: 14px;
+    padding-right: 28px;
     font-family: Roboto;
 }
 
@@ -71,9 +101,18 @@ ul {
 
 .central-container {
     background-image: url(../ellipse.svg);
-    background-position: 100% 100%;
+    background-position-x: 118%;
+    background-position-y: -25%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 51%;
+    
+}
+
+.author-photo{
+    position: absolute;
+    z-index: 0;
+    left: 814px;
+    top: 58px;
 }
 
 .main{
@@ -91,6 +130,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.pink {
+        color: #fc557c;
+        text-decoration: underline;
+}
+
 .in-banner-content {
     position: absolute;
     top: 200px;
@@ -99,29 +143,27 @@ a:hover {
 .top-info {
     display: flex;
     flex-direction: column;
-    height: 232px;
+    height: 258px;
     align-items: stretch;
+    padding-top: 203px;
 }
 
 .my-name {
     font-size: 80px;
     margin: 0;
     padding-top: 0;
-    font-family: Roboto;
-    padding-left: 14px;
-    font-weight: bold;
+    font-family: Roboto-black;
 }
 
 .job-title {
     color: #8993ad;
     font-size: 25px;
-    font-family: Roboto;
-    padding-left: 17px;
+    font-family: roboto-regular;
+    line-height: 2em;
+    margin-bottom: 37px;
 }
 
 .detail-button {
-    margin-top: 44px;
-    margin-left: 14px;
     display: block;
     width: 270px;
     height: 58px;
@@ -151,15 +193,20 @@ a:hover {
     transform: rotate(180deg)
 }
 
+.my-job {
+    height: 653px;
+}
+
+.job-examples {
+    height: 855px;
+}
+
 .medium-gradient {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     height: 364px;
     width: 100%;
-    max-width: 1170px;;
-    margin: 0 auto;
     text-align: left;
     font-family: Roboto;
     color: #fff;
@@ -169,8 +216,10 @@ a:hover {
     flex-direction: column;
 }
 
-.main-text {
+.gradient-p {
     font-size: 44px;
+    width: 1000px;
+    padding:0 100px;
 }
 
 .mini-text {
@@ -275,10 +324,10 @@ a:hover {
 
 .container {
     display: flex;
+    position: relative;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     justify-items: flex-end;
-    background-image: url(../images/photo.png);
     background-position: 113% 150%;
     background-repeat: no-repeat;
     height: 690px;
@@ -316,7 +365,6 @@ a:hover {
     .main-wrapper {
         display: flex;
         flex-direction: column;
-        background-image: url(../images/photo.png);
     }
     .in-banner-content {
         position: static;
