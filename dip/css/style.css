@@ -108,11 +108,17 @@ ul {
     
 }
 
-.author-photo{
+.author-photo-picture{
     position: absolute;
-    z-index: 0;
     left: 814px;
     top: 58px;
+    overflow: hidden;
+    height: 632px;
+}
+
+.author-photo{
+    width: 435px;
+    height: 651px;
 }
 
 .main{
