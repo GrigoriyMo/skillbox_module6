@@ -70,7 +70,6 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    
 }
 
 .nav {
@@ -124,7 +123,7 @@ ul {
     color: #fc557c;
     display: block;
     border: 1px solid #fc557c;
-    width: 208px;
+    width: 248px;
     height: 44px;
     box-sizing: border-box;
     line-height: 44px;
@@ -261,7 +260,7 @@ a:hover {
     padding-bottom: 66px;
 }
 
-.my-job-list-element{
+.my-job-list-element {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,7 +273,7 @@ a:hover {
 .my-job-description {
     display: block;
     text-align: center;
-    padding-top:15px
+    padding-top: 15px
 }
 
 .job-examples-block {
@@ -286,16 +285,15 @@ a:hover {
     background-color: #fbfbfb;
 }
 
-.job-example-header{
+.job-example-header {
     padding-top: 85px;
     margin-bottom: 100px;
-    
 }
 
-.job-examples-list{
+.job-examples-list {
     position: relative;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -303,7 +301,7 @@ a:hover {
     margin-bottom: 95px;
 }
 
-.job-examples-list-element{
+.job-examples-list-element {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,8 +344,8 @@ a:hover {
 
 .mini-text {
     padding-left: 128px;
-    padding-top:28px;
-    font-family: roboto-Regular;
+    padding-top: 28px;
+    font-family: roboto-regular;
     font-size: 18px;
 }
 
@@ -362,18 +360,21 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     height: 80px;
+    padding-right: 104px;
 }
 
 .contact {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    line-height: 1.5rem;
 }
 
 .contact-icon {
     background-image: linear-gradient(to bottom right, #fa098f, #f6355b);
     display: flex;
     flex-direction: column;
+    height: 22px;
 }
 
 .contact-icon>.fa {
@@ -391,15 +392,16 @@ a:hover {
 .contacts-link {
     font-size: 25px;
     color: #000;
-    font-family: Roboto;
+    font-family: roboto-regular;
 }
 
 .social-media {
-    width: 200px;
+    width: 231px;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    padding-right: 34px;
 }
 
 .social-media-icon {
@@ -425,10 +427,9 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     height: 262px;
-    align-items: center;
     width: 100%;
     max-width: 1170px;
-    ;
+    padding-top: 78px;
     margin: 0 auto;
 }
 
@@ -436,13 +437,14 @@ a:hover {
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 80px;
+    height: 85px;
 }
 
 .bottom-nav-li-link {
     color: #8993ad;
     font-size: 18px;
-    font-family: Roboto;
+    font-family: roboto-regular;
+    line-height: 1rem;
 }
 
 .right-bottom {
@@ -451,6 +453,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-right: 22px;
 }
 
 .container {
@@ -462,6 +465,10 @@ a:hover {
     background-position: 113% 150%;
     background-repeat: no-repeat;
     height: 690px;
+}
+
+.top-shift {
+    padding-top:9px
 }
 
 @media (min-width: 1171px) {
