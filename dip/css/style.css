@@ -426,7 +426,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 262px;
+    height: 184px;
     width: 100%;
     max-width: 1170px;
     padding-top: 78px;
@@ -469,6 +469,20 @@ a:hover {
 
 .top-shift {
     padding-top:9px
+}
+
+.copyright-bar{
+    height: 81px;
+    background-color: #31293c;
+    color:#fff;
+    text-align: center;
+    padding-top: 28px;
+}
+
+.copyright-text{
+    font-family: roboto-regular;
+    font-size: 16px;
+    
 }
 
 @media (min-width: 1171px) {
