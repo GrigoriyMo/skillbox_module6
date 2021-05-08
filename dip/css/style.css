@@ -70,7 +70,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
 }
 
 .nav {
@@ -277,14 +277,19 @@ a:hover {
     padding-top:15px
 }
 
+.job-examples-block {
+    align-items: center;
+}
+
 .job-examples {
-    height: 855px;
+    height: 862px;
     background-color: #fbfbfb;
 }
 
 .job-example-header{
     padding-top: 85px;
     margin-bottom: 100px;
+    
 }
 
 .job-examples-list{
@@ -318,7 +323,7 @@ a:hover {
 
 .medium-gradient {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 364px;
     width: 100%;
@@ -332,13 +337,23 @@ a:hover {
 }
 
 .gradient-p {
-    font-size: 44px;
-    width: 1000px;
-    padding: 0 100px;
+    font-size: 45px;
+    width: 970px;
+    padding: 74px 100px 0 126px;
+    margin: 0;
+    font-family: roboto-Bold;
 }
 
 .mini-text {
-    font-size: 20px;
+    padding-left: 128px;
+    padding-top:28px;
+    font-family: roboto-Regular;
+    font-size: 18px;
+}
+
+.mini-text-second-line {
+    padding-left: 14px;
+    line-height: 32px;
 }
 
 .center-bottom {
