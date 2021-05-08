@@ -68,6 +68,9 @@ body {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav {
@@ -277,9 +280,6 @@ a:hover {
 .job-examples {
     height: 855px;
     background-color: #fbfbfb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .job-example-header{
