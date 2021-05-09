@@ -108,14 +108,16 @@ ul {
     margin-top: 30px;
     justify-content: space-between;
     padding: 0;
+    width:460px;
 }
 
 .phnumbner {
     font-size: 25px;
     color: #000;
     line-height: 44px;
-    padding-right: 28px;
+    padding-left: 4px;
     font-family: Roboto;
+   
 }
 
 .call-request {
@@ -130,6 +132,10 @@ ul {
     text-align: center;
     background-color: #fff;
     align-self: flex-end;
+}
+
+.call-request-nav{
+    width:208px;
 }
 
 .central-container {
@@ -360,7 +366,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     height: 80px;
-    padding-right: 104px;
+    padding-right: 67px;
 }
 
 .contact {
