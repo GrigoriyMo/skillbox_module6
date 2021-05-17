@@ -86,6 +86,10 @@ ul {
     justify-content: space-between;
 }
 
+.mobile-burger{
+    display: none;
+}
+
 .left-nav, .right-nav {
     margin: 0;
 }
@@ -183,6 +187,7 @@ a:hover {
     position: absolute;
     top: 200px;
 }
+
 
 .top-info {
     display: flex;
@@ -478,7 +483,7 @@ a:hover {
 }
 
 .copyright-bar{
-    height: 81px;
+    height: 53px;
     background-color: #31293c;
     color:#fff;
     text-align: center;
@@ -488,13 +493,179 @@ a:hover {
 .copyright-text{
     font-family: roboto-regular;
     font-size: 16px;
-    
 }
 
-@media (min-width: 1171px) {
-    .banner {
-        background-size: 150%;
+.pagination {
+    display: none;
+}
+
+@media (max-width: 1025px) {
+    .nav {
+        width: 945px;
     }
+
+    .left-nav {
+        display: none;
+    }
+
+    .right-nav {
+        margin-top:0;
+    }
+
+    .phnumbner{
+        margin-top: 28px;
+        padding-left: 2px;
+    }
+
+    .main-block {
+        width: 945px;
+    }
+
+    .central-container {
+        background-position-x: 230%;
+        background-position-y: 1490%;
+        background-size: 80%;
+    }
+
+
+    .mobile-burger{
+        padding-top: 37px;
+        display: block;
+    }
+
+    .author-photo-picture{
+        left: 512px;
+    }
+
+    .top-info {
+        padding-top: 233px;
+    }
+
+    .my-name{
+        font-size: 54px;
+    }
+
+    .job-title {
+        padding-top: 6px;
+    }
+
+    .more-button {
+        width: 320px;
+        height: 68px;
+    }
+
+    .my-job {
+        height: 885px;
+    }
+
+    .my-job-header {padding-right: 31px;}
+
+    .my-job-list {
+        flex-wrap: wrap;
+        width: 652px;
+        padding-bottom: 95px;
+    }
+
+    .job-example-header{
+        padding:0;
+    }
+
+    .layout-element-picture{
+        padding-left: 5px;
+    }
+
+    .adaptive-element-picture {
+        padding-right: 25px;
+    }
+
+    .fronted-dev-element{
+        padding-top: 53px;
+    }
+
+    .fronted-dev-element-picture {
+        padding-left: 6px;
+        }
+
+    .refactoring-element{
+        padding-top: 53px;
+    }
+
+    .refactoring-element-picture {
+    padding-right: 23px;
+        
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .hidden-element{
+        display: none;
+    }
+
+    .job-examples{
+        height: 967px;
+    }
+
+    .job-examples-img{
+        width: 455px;
+        height: 356px;
+    }
+
+    .job-example-description{
+        font-size: 25px;
+        padding-right: 10px;
+    }
+
+    .job-examples-picture {
+        margin-bottom: 14px;
+    }
+
+    .pagination {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        width: 115px;
+        margin-bottom: 98px;
+    }
+
+    .left-nav-footer{
+        display: block;
+        justify-content: flex-start;
+    }
+
+    .bottom {
+        width: 945px;
+        margin-bottom: 25px;
+    }
+
+    .bottom-nav-li{
+        margin-bottom: 13px;
+    }
+
+    .right-bottom {
+        padding-right: 0;
+        padding-top: 23px;
+    }
+
+    .top-shift {
+        padding-top: 32px;
+    }
+
+    .center-bottom {
+        padding-right: 106px; 
+    }
+
+    .social-media{
+        padding-top: 32px;
+    }
+
+    .copyright-bar{
+        padding-top:25px;
+        height: 56px;
+    }
+
 }
 
 @media (min-width: 1300px) {
