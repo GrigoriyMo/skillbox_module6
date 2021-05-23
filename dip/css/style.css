@@ -673,7 +673,9 @@ a:hover {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
     .container {
-        height: 631px;
+        height: 555px;
+        align-items: center;
+        padding-top: 76px;
     }
 
     .nav {
@@ -956,5 +958,25 @@ a:hover {
       font-size: 12px;  
     }
 
+.central-container {
+
+    background-position-x: -22px;
+    background-position-y: 109px;
+    background-size: 130%;
+
+}
+.author-photo-picture{
+    height: 331px;
+    position: static;
+    overflow: unset;
+    padding-left:55px;
+}
+
+.top-info{
+    padding-top: 10px;
+    background-color: #fff;
+    width:100%;
+    height: 174px;
+}
 
 }
