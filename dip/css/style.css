@@ -505,6 +505,10 @@ a:hover {
     display: none;
 }
 
+.pagination-mobile {
+    display: none;
+}
+
 @media (max-width: 1025px) {
     .nav {
         width: 945px;
@@ -667,6 +671,11 @@ a:hover {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    .container {
+        height: 631px;
+    }
+
     .nav {
         width: auto;
     }
@@ -721,5 +730,231 @@ a:hover {
         font-size: 16px;
         text-align: center;
         width: 215px;
+        padding-top: 8px;
+        line-height: normal;
+        margin-bottom: 27px;
     }
+
+    .more-button {
+        width: 280px;
+        height: 55px;
+    }
+
+    .my-job  {
+        padding-top: 0;
+    }
+
+    .main-block {
+        width: 100%;
+    }
+
+    .my-job-header {
+        padding:0;
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .my-job-list {
+        width: 100%;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 4px;
+    }
+
+    .my-job-list-element {
+        margin-bottom: 50px;
+    }
+
+    .my-job-img {
+        width: 62px;
+        height: 56px;
+    }
+
+    .layout-element-picture {
+        padding-left: 0;
+       /*  padding-top: 40px; */
+    }
+
+    .adaptive-element-picture {
+        padding-right: 0;
+       /*  padding-top: 12px; */
+    }
+
+    .my-job-description {
+        font-size: 16px;
+       padding-top: 14px;
+    }
+
+    .fronted-dev-element {
+        padding-top: 0;
+    }
+
+    .fronted-dev-element-picture {
+       /*  padding-top: 17px; */
+        padding-left: 2px;
+    }
+
+    .refactoring-element {
+        padding-top: 0;
+    }
+
+    .refactoring-element-picture {
+       /*  padding-top: 16px; */
+        padding-right: 0;
+    }
+
+    .layout-element-description{
+       /*  padding-top:50px; */
+    }
+
+    .more-button{
+        font-size: 16px;
+    }
+
+    .job-examples {
+        height: 640px;
+    }
+
+    .job-examples-block{
+        padding-top:25px;
+    }
+
+    .job-example-header{
+        width: 216px;
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+    .job-examples-list {
+        margin-bottom: 40px;
+    }
+
+    .job-examples-list-element {
+        width:100%;
+    }
+
+    .job-examples-picture {
+        padding-top: 46px;
+        margin-bottom: 0;
+    }
+
+    .job-examples-img {
+        width: 280px;
+        height: 250px;
+    }
+
+    .job-example-description {
+        font-size: 18px;
+        padding-top: 5px;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+    .pagination-mobile {
+        width: 85px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        padding:0;
+        margin-bottom: 43px;
+    }
+
+    .medium-gradient{
+        padding: 43px 20px 0 20px;
+        height: auto;
+    }
+
+    .gradient-p{
+        font-size: 28px;
+        width:100%;
+        padding:0;
+        text-align: left;
+        padding-bottom: 40px;
+    }
+
+    .mini-text{
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .pixel-perfect-crunch{
+        display: none;
+    }
+
+    .mini-text-second-line{
+        padding-left: 0;  
+    }
+
+    .bottom {
+        padding-top: 45px;
+        width:100%;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .top-shift {
+        padding:0;
+    }
+
+    .left-nav-footer{
+        margin-bottom: 40px;
+        padding-left: 20px;
+    }
+
+    .center-bottom {
+        padding-left: 20px;
+        justify-content: flex-start;
+    }
+
+    .bottom-nav-li {
+        margin-bottom: 16px;
+    }
+
+    .bottom-nav-li-link {
+        font-size: 15px;
+    }
+    
+    .contact-phone {
+        margin-bottom: 25px;
+    }
+
+    .contacts-link{
+        font-size: 20px;
+    }
+
+    .mobile-call-request {
+        align-self: unset;
+        display: block;
+        width: 280px;
+        height: 55px;
+        color: #fff;
+        background-color: #ff4e2e;
+        border: 0;
+        font-size: 18px;
+    }
+
+    .right-bottom {
+        padding-top: 15px;
+        height: auto;
+    }
+
+    .social-media {
+        padding-top: 50px;
+        padding-right: 85px;
+    }
+
+    .copyright-bar {
+        padding-top: 16px;
+        height: 40px;
+    }
+
+    .copyright-text{
+      font-size: 12px;  
+    }
+
+
 }
